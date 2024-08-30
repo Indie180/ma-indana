@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+function calculator(){
+ var int = document.getElementById("input1").value;
+ console.log(int)
+ var evaluation=eval(int)
+ console.log(evaluation)
+ document.getElementById("input2").innerHTML=evaluation
+}
+
+
+
+</script>
+<body>
+  <p id="input2"></p> 
+    <input id="input1" type="text">
+    <button onclick="calculator()">calculate</button>
+</body>
+</html>
